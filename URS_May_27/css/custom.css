@@ -1,0 +1,76 @@
+/* Add here all your CSS customizations */
+/* styles for validation helpers */
+.field-validation-error {
+    color: #e80c4d;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #e80c4d;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #e80c4d;
+    font-size: 1.1em;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+#slidingDiv {
+}
+
+/*Recaptch*/
+
+#CaptchaImage {
+    max-width: 190px !important;
+}
+
+#CaptchaInputText {
+    margin: 0;
+    padding: 0;
+    width: 190px;
+}
+
+    #CaptchaInputText input {
+        float: right;
+    }
+
+    #CaptchaInputText a {
+        display: none;
+    }
+
+.recaptcha-full-width {
+    float: left;
+    width: 200px;
+}
+
+    .recaptcha-full-width br {
+        display: none;
+    }
+
+/*Jobs*/
+
+.chzn-select {
+    width: 200px;
+}
+
+.motivation {
+    width: 850px;
+    height: 150px;
+}
+
+.submit-btn {
+    float: right;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
