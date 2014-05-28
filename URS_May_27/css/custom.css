@@ -1,28 +1,28 @@
 /* Add here all your CSS customizations */
 /* styles for validation helpers */
 .field-validation-error {
-    color: #e80c4d;
+	color: #e80c4d;
 }
 
 .field-validation-valid {
-    display: none;
+	display: none;
 }
 
 input.input-validation-error {
-    border: 1px solid #e80c4d;
+	border: 1px solid #e80c4d;
 }
 
 input[type="checkbox"].input-validation-error {
-    border: 0 none;
+	border: 0 none;
 }
 
 .validation-summary-errors {
-    color: #e80c4d;
-    font-size: 1.1em;
+	color: #e80c4d;
+	font-size: 1.1em;
 }
 
 .validation-summary-valid {
-    display: none;
+	display: none;
 }
 
 #slidingDiv {
@@ -31,46 +31,377 @@ input[type="checkbox"].input-validation-error {
 /*Recaptch*/
 
 #CaptchaImage {
-    max-width: 190px !important;
+	max-width: 190px !important;
 }
 
 #CaptchaInputText {
-    margin: 0;
-    padding: 0;
-    width: 190px;
+	margin: 0;
+	padding: 0;
+	width: 190px;
 }
 
-    #CaptchaInputText input {
-        float: right;
-    }
+#CaptchaInputText input {
+	float: right;
+}
 
-    #CaptchaInputText a {
-        display: none;
-    }
+#CaptchaInputText a {
+	display: none;
+}
 
 .recaptcha-full-width {
-    float: left;
-    width: 200px;
+	float: left;
+	width: 200px;
 }
 
-    .recaptcha-full-width br {
-        display: none;
-    }
+.recaptcha-full-width br {
+	display: none;
+}
 
 /*Jobs*/
 
 .chzn-select {
-    width: 200px;
+	width: 200px;
 }
 
 .motivation {
-    width: 850px;
-    height: 150px;
+	width: 850px;
+	height: 150px;
 }
 
 .submit-btn {
-    float: right;
-    margin-top: 50px;
-    margin-right: 50px;
+	float: right;
+	margin-top: 50px;
+	margin-right: 50px;
 }
 
+/*Slider*/
+#featured {-moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.07) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.07)));
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.07) 100%);
+	background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.07) 100%);
+	background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.07) 100%);
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.07) 100%);
+	background-color: #2f74c4;
+	text-align: center;
+	padding-top: 20px;
+	position: relative;
+	-webkit-box-shadow: inset 0 0 250px #0044ba;
+	-moz-box-shadow: inset 0 0 250px #0044ba;
+	box-shadow: inset 0 0 250px #0044ba;
+	max-width: 74.63%;
+	max-height: 380px; 
+	position: relative;
+	right: auto;
+	left:168px;
+}
+#featured.et_slider_auto {
+	padding-bottom: 2px;
+}
+#featured, #featured #slides {
+	overflow: hidden;
+}
+#featured .slide {
+	width: 100%;
+	float: left;
+	margin-right: -100%;
+	position: relative;
+	display: none;
+	-webkit-transform: translate3d(0,0,0);
+	min-height: 300px;
+}
+.js #featured .slide.et-active-slide {
+	display: list-item;
+}
+
+#featured .slide img {
+	margin-bottom: -2px;
+	background-size: cover;
+	background-position: center bottom;
+}
+
+.slide .description {
+	text-shadow: 0 0 10px rgba(0,0,0,0.4);
+	padding-bottom: 50px;
+}
+
+.slide .description h2, .post-heading h1, h1#comments, #reply-title, h1.category-title, .post-description h2, .related.products h2 {
+	font-family: 'Raleway', Arial, sans-serif;
+	font-weight: 100;
+	letter-spacing: -4px;
+}
+
+.slide a:hover {
+	text-decoration: none;
+	color: rgba(255,255,255,0.9);
+}
+
+.slide .description h2, .post-heading h1, h1#comments, #reply-title, h1.category-title, .related.products h2 {
+	font-size: 60px;
+	color: #333;
+}
+
+.slide .description h2, .post-description h2 {
+	color: #fff;
+}
+
+.slide .description p {
+	color: #fff;
+	font-size: 24px;
+	margin-top: -2px;
+}
+.left-arrow, .right-arrow, .et-arrow-prev, .et-arrow-next {
+	position: absolute;
+	top: 50%;
+	margin-top: -40px;
+	background-color: #333;
+	width: 40px;
+	height: 80px;
+	text-indent: -9999px;
+	display: block;
+	z-index: 100;
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	opacity: 0;
+}
+.left-arrow, .et-arrow-prev {
+	background: #333 url(../img/slides/left-arrow.png) no-repeat 5px center;
+	left: -40px;
+}
+.right-arrow, .et-arrow-next {
+	background: #333 url(../img/slides/right-arrow.png) no-repeat 10px center;
+	right: -40px;
+}
+#featured .et-arrow-prev {
+	-webkit-box-shadow: 3px 3px 5px rgba( 0,0,0,0.25 );
+	-moz-box-shadow: 3px 3px 5px rgba( 0,0,0,0.25 );
+	box-shadow: 3px 3px 5px rgba( 0,0,0,0.25 );
+}
+#featured .et-arrow-next {
+	-webkit-box-shadow: -3px -3px 5px rgba( 0,0,0,0.25 );
+	-moz-box-shadow: -3px -3px 5px rgba( 0,0,0,0.25 );
+	box-shadow: -3px -3px 5px rgba( 0,0,0,0.25 );
+}
+
+#featured:hover .et-arrow-prev, #et-product-slider:hover .et-arrow-prev {
+	left: 0;
+	opacity: 1;
+}
+#featured:hover .et-arrow-next, #et-product-slider:hover .et-arrow-next {
+	right: 0;
+	opacity: 1;
+}
+
+#featured-progress-bar {
+	height: 10px;
+	width: 100%;
+	background-color: #333;
+	z-index: 30;
+	position: absolute;
+	bottom: 0px;
+	left: 0;
+}
+#progress-time {
+	background-color: #2f74c4;
+	height: 10px;
+}
+
+#featured .slide.et-active-slide img {
+	-webkit-animation-duration: .7s;
+	-webkit-animation-delay: .4s;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-fill-mode: both;
+	-moz-animation-duration: .7s;
+	-moz-animation-delay: .4s;
+	-moz-animation-timing-function: ease-in-out;
+	-moz-animation-fill-mode: both;
+	-o-animation-duration: .7s;
+	-o-animation-delay: .4s;
+	-o-animation-timing-function: ease-in-out;
+	-o-animation-fill-mode: both;
+	-ms-animation-duration: .7s;
+	-ms-animation-delay: .4s;
+	-ms-animation-timing-function: ease-in-out;
+	-ms-animation-fill-mode: both;
+	animation-duration: .7s;
+	animation-delay: .4s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: both;
+	-webkit-animation-name: fadeInUp_custom;
+	-moz-animation-name: fadeInUp_custom;
+	-o-animation-name: fadeInUp_custom;
+	-ms-animation-name: fadeInUp_custom;
+	animation-name: fadeInUp_custom;
+}
+
+
+#featured .slide.et-active-slide .description {
+	-webkit-animation-duration: .7s;
+	-webkit-animation-delay: .9s;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-fill-mode: both;
+	-moz-animation-duration: .7s;
+	-moz-animation-delay: .9s;
+	-moz-animation-timing-function: ease-in-out;
+	-moz-animation-fill-mode: both;
+	-o-animation-duration: .7s;
+	-o-animation-delay: .9s;
+	-o-animation-timing-function: ease-in-out;
+	-o-animation-fill-mode: both;
+	-ms-animation-duration: .7s;
+	-ms-animation-delay: .9s;
+	-ms-animation-timing-function: ease-in-out;
+	-ms-animation-fill-mode: both;
+	animation-duration: .7s;
+	animation-delay: .9s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: both;
+	-webkit-animation-name: bounceIn;
+	-moz-animation-name: bounceIn;
+	-ms-animation-name: bounceIn;
+	-o-animation-name: bounceIn;
+	animation-name: bounceIn;
+}
+
+#featured .slide.et-active-slide h2 {
+	-webkit-animation-duration: .7s;
+	-webkit-animation-delay: 1.4s;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-fill-mode: both;
+	-moz-animation-duration: .7s;
+	-moz-animation-delay: 1.4s;
+	-moz-animation-timing-function: ease-in-out;
+	-moz-animation-fill-mode: both;
+	-o-animation-duration: .7s;
+	-o-animation-delay: 1.4s;
+	-o-animation-timing-function: ease-in-out;
+	-o-animation-fill-mode: both;
+	-ms-animation-duration: .7s;
+	-ms-animation-delay: 1.4s;
+	-ms-animation-timing-function: ease-in-out;
+	-ms-animation-fill-mode: both;
+	animation-duration: .7s;
+	animation-delay: 1.4s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: both;
+	-webkit-animation-name: bounceIn;
+	-moz-animation-name: bounceIn;
+	-ms-animation-name: bounceIn;
+	-o-animation-name: bounceIn;
+	animation-name: bounceIn;
+}
+
+.et_color_scheme_blue #featured {
+	-moz-box-shadow: inset 0 0 250px #1d2ead;
+	-webkit-box-shadow: inset 0 0 250px #1d2ead;
+	box-shadow: inset 0 0 250px #1d2ead;
+	background-color: #2f74c4;
+}
+
+
+/* =Your Generated css 
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+
+.classname {
+	transition: All 1.3112s ease-in;
+	-webkit-transition: All 1.3112s ease-in;
+	-moz-transition: All 1.3112s ease-in;
+	-o-transition: All 1.3112s ease-in;
+	transform: rotate(360deg) scale(0.991) skew(-12deg) translate(2px);
+	-webkit-transform: rotate(360deg) scale(0.991) skew(-12deg) translate(2px);
+	-moz-transform: rotate(360deg) scale(0.991) skew(-12deg) translate(2px);
+	-o-transform: rotate(360deg) scale(0.991) skew(-12deg) translate(2px);
+	-ms-transform: rotate(360deg) scale(0.991) skew(-12deg) translate(2px);
+}
+.classname:hover {
+	transform: rotate(0deg) scale(0.67) skew(1deg) translate(0px);
+	-webkit-transform: rotate(0deg) scale(0.67) skew(1deg) translate(0px);
+	-moz-transform: rotate(0deg) scale(0.67) skew(1deg) translate(0px);
+	-o-transform: rotate(0deg) scale(0.67) skew(1deg) translate(0px);
+	-ms-transform: rotate(0deg) scale(0.67) skew(1deg) translate(0px);
+}
+
+
+/* End of Your Generated css 
+
+
+
+
+
+
+
+/*Home Boxes*/
+
+#expertise-hp-grid ul li {
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+#expertise-hp-grid li > article > img, .view-mode-push_block a.voverlay > img {
+    width: 100%;
+}
+.block_mostbuzzworthy {
+    background-color: #465A63;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    padding: 30px 25px 20px;
+}
+.block_mostbuzzworthy > .buzz_title {
+    font-family: HelveticaLTStdLight,helvetica,arial;
+    font-size: 1.375em;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+}
+.block_mostbuzzworthy > .buzz_subtitle {
+    font-size: 1.125em;
+}
+.block_mostbuzzworthy > .buzz_links {
+    font-size: 1.3125em;
+    padding-top: 30px;
+}
+.block_mostbuzzworthy > .buzz_links > li {
+    display: inline;
+}
+.block_mostbuzzworthy > .buzz_links a, .block_mostbuzzworthy > .buzz_links a:visited {
+    color: #FFFFFF;
+    line-height: 1.6em;
+}
+.block_mostbuzzworthy > .buzz_links a:hover, .block_mostbuzzworthy > .buzz_links a:active {
+    color: #AAB4B9;
+}
+.block_mostbuzzworthy > .buzz_more_topics {
+    margin-top: 28px;
+}
+.block_mostbuzzworthy > .buzz_more_topics > a {
+    background: url("../../../all/themes/capgemini/images/arrow-light-right-forward.png") no-repeat scroll 100% 50% rgba(0, 0, 0, 0);
+    color: #FFFFFF;
+    font-size: 1.125em;
+    padding-right: 30px;
+}
+.block_mostbuzzworthy > .buzz_more_topics > a:hover, .block_mostbuzzworthy > .buzz_more_topics > a:active {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+.block_expertise_homepage, #expertise-hp-grid .view-mode-push_double_block.node-resource-video {
+    overflow: hidden;
+}
+#expertise-hp-grid .block_expertise_homepage > img {
+    width: 100%;
+}
+#expertise-hp-grid .span8 .block_expertise_homepage > img {
+    height: auto;
+    max-width: 100%;
+    width: 100%;
+}
+#expertise-hp-grid .span8 .node-resource-video > a > img {
+    height: auto;
+    max-width: 100%;
+    width: 100%;
+}
+.node-type-expertise-homepage .conversations-wrapper .start-conversation-wrapper {
+    text-align: center;
+}
+.node-type-expertise-homepage .block_width_1 .node-block-expertise-homepage .title {
+    padding: 15px 0 10px 20px;
+    text-align: center;
+}

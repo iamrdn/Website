@@ -6,7 +6,7 @@ body {
 }
 
 body {
-	background-color: ##f0f0f0;
+	background-color: #F0F0F0;
 	/*background: url("../img/urs/body_background.png") repeat-y scroll center center rgba(0, 0, 0, 0);*/
 	color: #303030;
 	font-size: 14px;
@@ -21,7 +21,7 @@ header {
     top: 0;
     right:0;
     left:0;
-    margin-bottom:0
+    margin-bottom:0;
     width: 100%;
     z-index: 99999;
 	border-top: 5px solid #0088CC;
@@ -32,7 +32,12 @@ header {
 	background: -o-linear-gradient(top,  #f6f6f6 0%,#ffffff 100%);
 	background: -ms-linear-gradient(top,  #f6f6f6 0%,#ffffff 100%);
 	background: linear-gradient(to bottom,  #f6f6f6 0%,#ffffff 100%);
-	box-shadow: 1px 0px 11px rgba(125, 169, 171, 1);
+	/*background: url("../img/urs/border-header.png") repeat-x scroll center bottom rgba(0, 0, 0, 0);*/
+	border-bottom: 1px solid #e8e8e8;
+}
+
+header.container {
+	width: 960px!important
 }
 
 .main {
@@ -1268,41 +1273,60 @@ a.scroll-to-top.visible {
 
 /*Boxes*/
 
-#home_main {
+.home_main {
 	width: auto;
-	margin: 0px 0px 0px 80px;
-	padding: 60px 10px;
+	margin: 0px 0px 0px 24.8px;
 }
 
 /*Home Boxes*/
 #box {
 	text-align: left;
-    margin-right:20px;
-    width: 330px;
-    height: 200px;
+    margin:5px;
+    width: 316.7px;
+    height: 300px;
     overflow: hidden;
     position: relative;
     float: left;
+    border: 1px solid #1D2EAD;
+    padding: 5px;
 }
+
+.box {
+	text-align: left;
+    margin:5px;
+    width: 316.7px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    border: 1px solid #1D2EAD;
+    padding: 5px;
+}
+
+
 
 #box1 {
 	text-align: left;
-    margin-right:20px;
-    width: 330px;
-    height: 200px;
+    margin:5px;
+    width: 316.7px;
+    height: 300px;
     overflow: hidden;
     position: relative;
     float: left;
+    border: .5px solid #1D2EAD;
+    padding: 5px;
 }
 
 #box2 {
 	text-align: left;
-    margin: auto;
-    width: 330px;
-    height: 200px;
+    margin:5px;
+    width: 316.7px;
+    height: 300px;
     overflow: hidden;
     position: relative;
     float: left;
+    border: .5px solid #1D2EAD;
+    padding: 5px;
 }
 
 .image img {
@@ -1412,13 +1436,8 @@ a.scroll-to-top.visible {
        -o-transition: all 1s ease;
       -ms-transition: all 1s ease;
           transition: all 1s ease;
-          border-right: 1px solid #0088CC;
-          border-bottom: 1px solid #0088CC;
 }
  
-.focus:hover {
-  border-left: 0px solid #0088CC;
-}
 
 
 /*Footer*/
@@ -1436,7 +1455,7 @@ a.scroll-to-top.visible {
 }
 
 .quicklinks {
-	margin-left: 100px !important;
+	margin-left: 35px !important;
 	width: 225px !important;
 }
 
