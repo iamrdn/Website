@@ -9,3 +9,12 @@ $(document).ready(function() {
 	});
 
 });
+
+function hidefixed2() {
+	$("#fixed1").slideDown();
+	$("#fixed2").slideUp();
+}
+function hidefixed1() {
+	$("#fixed1").slideUp();
+	$("#fixed2").slideDown();
+}

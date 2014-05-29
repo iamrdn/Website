@@ -28,6 +28,106 @@ input[type="checkbox"].input-validation-error {
 #slidingDiv {
 }
 
+/*Fixed Footer*/
+.tweeter-ticker {
+	background: #0f4155;
+	color: #fff;
+	width: 100%;
+	display: block;
+	position: fixed;
+	bottom: 0;
+	z-index: 1000;
+}
+.tweeter-ticker .container.ticker-wrapper {
+	height: 53px;
+	overflow: hidden;
+	position: relative;
+}
+.tweeter-ticker .container.first {
+	position: absolute;
+	top: 5px;
+	bottom: 5px;
+	left: -670px;
+	right: 40px;
+	border-right: 1px solid #FFFFFF;
+	height: 44px;
+	width: 300px !important;
+}
+.tweeter-ticker .container.second {
+	position: absolute;
+	top: 5px;
+	bottom: 5px;
+	right: 309px;
+	border-right: 1px solid #FFFFFF;
+	height: 44px;
+	width: 400px !important;
+	text-align: center;
+}
+.tweeter-ticker .container.third {
+	position: absolute;
+	top: 5px;
+	bottom: 5px;
+	right: 8px;
+	height: 44px;
+	width: 300px !important;
+	overflow: hidden;
+}
+.fixed_footer_text {
+	position: relative;
+    top: 60%; 
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+.tweeter-ticker .container .third .followus {
+	float: left;
+	width: 100px;
+}
+.tweeter-ticker .container .third .fixed_footer_scicon {
+	width: 250px;
+	float: left;
+}
+
+.tweeter-ticker .cap-ticker-cross {
+	position: absolute;
+	right: 0;
+	z-index: 100;
+	background: #0f4155;
+	border-left: 1px solid #e3e9eb;
+	padding-left: 10px;
+	padding-top: 10px;
+	height: 34px;
+	margin-top: 5px;
+}
+.tweeter-ticker .cap-ticker-cross img {
+	width:15px;
+	height: 15px;
+}
+.fright {
+	float: right;
+}
+.fleft {
+	float: left;
+	margin-left: 172px;
+}
+.tweeter-ticker .cap-ticker-open {
+	margin-top: 4px;
+}
+.ticker-closed {
+	background: #0f4155;
+	color: #fff;
+	width: 100%;
+	height:25px;
+	display: block;
+	position: fixed;
+	bottom: 0;
+	z-index: 1000;
+}
+.ticker-closed .cap-ticker-open {
+	margin: 4px 164px 0px 0px;
+	float: right;
+}	
+
+
 /*Recaptch*/
 
 #CaptchaImage {
